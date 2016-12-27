@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .github-fork-ribbon {
+            font-size: 23px !important;
+        }
+        .github-fork-ribbon:before {
+            background-color: #337ab7 !important;
+        }
+    </style>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+</head>
+<body ng-app="app" ng-controller="MyController" ng-init="init()">
+    <div class="container">
+        <a class="github-fork-ribbon" href="http://url.to-your.repo" title="Fork me on GitHub">Fork me on GitHub</a>
+        <div class="row">
+            <h1 style="text-align: center;">AngularJS Validações de Campo com Directives</h1>
+            <form>
+                {{formulario}}
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" ng-model="formulario.nome" capitalize-size="" only-letters="[^a-zA-Z]" with=" " autocomplete="off">
+                    {{formulario.nome}}
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email: {{formulario.email}}</label>
+                    <input type="text" class="form-control" id="pwd" ng-model="formulario.email" autocomplete="off" ng-length = "2" ng-pattern = '/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i'>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Idade: {{formulario.idade}}</label>
+                    <input type="text" class="form-control" id="pwd" ng-model="formulario.idade" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Data de aniversário:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Cor favorita:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">CPF:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">CEP:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">RG:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Nome completo:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Usuário:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Confirmar senha:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+            </form>
+         </div>
+        <div class="top-fixed pull-right" style="font-size: 72px; margin-bottom: 60px;">
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="col-md-9" style="border-bottom: 2px solid black;     margin-right: 12px;">Submit</span>
+        </div>
+    </div>
+</body>
+</html>

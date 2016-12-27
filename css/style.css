@@ -1,0 +1,30 @@
+.capa-superman {
+    background-color: #f8f;
+    border: 2px solid blueviolet;
+    width: 360px;
+}
+.btn {
+    background: aqua;
+    color: black;
+}
+.btn-primary {
+    background-color: #CCC;
+    color: black;
+}
+.centralizar {
+    width: 600px;
+    text-align: center;
+    border: 2px solid #00b3ee;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.rede-social {
+    text-align: center;
+    margin-top: 20px;
+}
+.rede-social img {
+    width: 250px;
+}
